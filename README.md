@@ -14,6 +14,47 @@ Until publication, the repository should be read as a transparent replication
 skeleton for review and archiving. It documents the key treatment-construction
 and HonestDiD steps without relying on the author's local Google Drive paths.
 
+Repository URL:
+
+```text
+https://github.com/mlacasa/minimum-wage-bites-spain-2019
+```
+
+## Statements for Editors and Reviewers
+
+### Code availability
+
+The code shared in this repository covers the construction of the minimum-wage
+bite measures and the R pipeline used for event-study estimation and HonestDiD
+sensitivity analysis. The repository is intended for editors and reviewers of
+the submitted manuscript and will be made public and updated after publication.
+
+### Software availability
+
+The Python stage uses:
+
+```text
+pandas
+numpy
+pyarrow
+```
+
+The R stage uses:
+
+```text
+fixest
+HonestDiD
+dplyr
+readr
+broom
+stringr
+tibble
+```
+
+The R pipeline writes `session_info.txt` to the results folder at execution
+time, so the exact R version and package versions used in each replication run
+are recorded with the outputs.
+
 ## What This Repository Covers
 
 The paper studies Spain's 2019 increase in the statutory minimum wage. Because
@@ -235,4 +276,3 @@ updated after publication with:
 - the final DOI;
 - the permanent data/code archive link;
 - any journal-requested replication-package changes.
-
